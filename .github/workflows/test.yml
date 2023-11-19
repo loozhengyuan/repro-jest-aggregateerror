@@ -28,6 +28,10 @@ jobs:
         run: |
           npm ci
 
+      - name: Print env info
+        run: |
+         npx envinfo --preset jest
+
       - name: Run tests
         run: |
           npm run test
